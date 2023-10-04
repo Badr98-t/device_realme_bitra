@@ -18,14 +18,19 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common bliss stuff.
-$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+# Inherit some common risingOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# Unofficial
+RISING_MAINTAINER := Badr98-t
+WITH_GMS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_ENABLE_BLUR := true
+TARGET_USE_PIXEL_FINGERPRINT := true
+TARGET_HAS_UDFPS := true
 
 # Enable extra UDFPS animations
 EXTRA_UDFPS_ANIMATIONS := true
-
-# Enable Face Unlock
-TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Set Boot Animination Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -34,7 +39,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := bliss_bitra
+PRODUCT_NAME := lineage_bitra
 PRODUCT_DEVICE := bitra
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX3370
