@@ -18,23 +18,20 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common AncientOS stuff
-$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
+# Inherit some common BlackIron stuff
+$(call inherit-product, vendor/blackiron/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_TOUCHGESTURES := true
 EXTRA_UDFPS_ANIMATIONS := true
-
-# AncientOS
-ANCIENT_OFFICIAL := true
-ANCIENT_GAPPS := true
 
 # Inherit from device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := ancient_bitra
+PRODUCT_NAME := blackiron_bitra
 PRODUCT_DEVICE := bitra
 PRODUCT_BRAND := Realme
 PRODUCT_MODEL := Realme GT Neo 2

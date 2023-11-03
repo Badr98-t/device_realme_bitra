@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ancient_bitra.mk
+    $(LOCAL_DIR)/blackiron_bitra.mk
 
 COMMON_LUNCH_CHOICES := \
-    ancient_bitra-user \
-    ancient_bitra-userdebug \
-    ancient_bitra-eng
+    blackiron_bitra-user \
+    blackiron_bitra-userdebug \
+    blackiron_bitra-eng
