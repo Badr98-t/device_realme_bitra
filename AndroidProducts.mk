@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rising_bitra.mk
+    $(LOCAL_DIR)/blackiron_bitra.mk
 
 COMMON_LUNCH_CHOICES := \
-    rising_bitra-user \
-    rising_bitra-userdebug \
-    rising_bitra-eng
+    blackiron_bitra-user \
+    blackiron_bitra-userdebug \
+    blackiron_bitra-eng
