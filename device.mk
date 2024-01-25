@@ -44,3 +44,6 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/realme/bitra
+
+#Oplus camera
+$(call inherit-product, vendor/oplus/camera/opluscamera.mk)
