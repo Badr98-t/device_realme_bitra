@@ -23,7 +23,7 @@ $(call inherit-product, vendor/blackiron/config/common_full_phone.mk)
 # Blackiron
 BLACKIRON_BUILDTYPE := Official
 
-TARGET_BUILD_APERTURE_CAMERA := true
+TARGET_BUILD_APERTURE_CAMERA := false
 TARGET_HAS_UDFPS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 EXTRA_UDFPS_ANIMATIONS := true
