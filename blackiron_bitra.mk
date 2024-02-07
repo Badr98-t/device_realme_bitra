@@ -18,8 +18,15 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common bliss stuff.
-$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+# Inherit some common blackiron stuff.
+$(call inherit-product, vendor/blackiron/config/common_full_phone.mk)
+
+BLACKIRON_BUILDTYPE := Official
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_ENABLE_BLUR := true
 
 # Enable extra UDFPS animations
 EXTRA_UDFPS_ANIMATIONS := true
@@ -34,7 +41,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := bliss_bitra
+PRODUCT_NAME := blackiron_bitra
 PRODUCT_DEVICE := bitra
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX3370

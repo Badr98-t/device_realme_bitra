@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bliss_bitra.mk
+    $(LOCAL_DIR)/blackiron_bitra.mk
 
 COMMON_LUNCH_CHOICES := \
-    bliss_bitra-user \
-    bliss_bitra-userdebug \
-    bliss_bitra-eng
+    blackiron_bitra-user \
+    blackiron_bitra-userdebug \
+    blackiron_bitra-eng
